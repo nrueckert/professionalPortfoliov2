@@ -7,19 +7,17 @@ header{
     align-items: center;
     width:100%;
     height:200px;
-    background-color:saddlebrown ;
 }
 #myName{
     padding-right:5px;
     margin: 20px 0px 0px 10px;
     Font-size:30px;
-    font-family:fantasy;
-    font-weight:500;
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-weight:bold;
     border-radius:5px;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:aqua ;
     
     
     
@@ -35,6 +33,7 @@ header{
     margin:20px 10px 0px 10px;
     width:100%;
     height:30px;
+    flex-wrap:wrap;
 }
 #listWork{
     padding:10px 10px;
