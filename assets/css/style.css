@@ -11,7 +11,7 @@ header{
 #myName{
     padding-right:5px;
     margin: 20px 0px 0px 10px;
-    Font-size:30px;
+    Font-size:40px;
     font-family:Brush Script MT, Brush Script Std, cursive;
     font-weight:bold;
     border-radius:5px;
@@ -48,8 +48,48 @@ header{
     margin:10px;
 }
 
-
+/* This removes underline and colors the links*/
 li a{
     text-decoration:none;
     color:rgba(211, 211, 211, 0.582);
+}
+/* Everything above makes the header appear how it does */
+#aboutMe{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    /*background-color: springgreen;*/
+}
+#aboutTitle{
+    font-size:30px;
+    border: 2px solid cadetblue;
+    margin:0px 0px 10px 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:cadetblue;
+}
+
+#aboutBox{
+    display:flex;
+    justify-content:center;
+    position: relative;
+    border: 4px dashed gold;
+}
+#aboutSub{
+    position:absolute;
+    top:448px;
+    left:100px;
+    border-top-left-radius:10px;
+    background-color: rgb(136, 102, 57);
+    height:60px;
+    padding:4px 4px;
+    
+    color:rgb(209, 209, 209)
+
+}
+#aboutPic{
+    position: relative;
+    width:400px;
 }
