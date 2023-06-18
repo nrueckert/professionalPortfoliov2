@@ -427,7 +427,7 @@ header{
 #contactMe{
     display:flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: center;
 }
 
@@ -460,3 +460,4 @@ header{
 
     }
 }
+/* Everything above modifies the aboutMe to screens wider than 900px*/
