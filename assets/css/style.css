@@ -267,7 +267,7 @@ li a{
 @media screen and (min-width:1300px){
     #aboutMe{
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         height:515px;
         width:100%;
@@ -304,11 +304,12 @@ li a{
     }
     #aboutPic{
         position: relative;
+        width:500px;
         
     }
     #aboutSub{
         position:absolute;
-        top:448px;
+        top:575px;
         left:100px;
         border-top-left-radius:10px;
         background-color: rgb(136, 102, 57);
