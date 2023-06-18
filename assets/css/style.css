@@ -267,10 +267,11 @@ li a{
 @media screen and (min-width:1300px){
     #aboutMe{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         height:515px;
         width:100%;
+        margin-bottom: 200px;
     }
 
     #aboutTextTitle{
@@ -278,7 +279,6 @@ li a{
         flex-wrap: wrap;
         flex-direction: column;
         align-items:center;
-        margin-left: 80px;
     }
     #aboutTitle{
         display:flex;
@@ -304,11 +304,12 @@ li a{
     }
     #aboutPic{
         position: relative;
+        width:500px;
         
     }
     #aboutSub{
         position:absolute;
-        top:448px;
+        top:575px;
         left:100px;
         border-top-left-radius:10px;
         background-color: rgb(136, 102, 57);
@@ -320,9 +321,77 @@ li a{
 }
 /* Everything above modifies the aboutMe for devices larger than 1300px wide.*/
 #work{
-    margin-left:20px;
-    width:80%;
+    margin-top:40px;
+    padding-top: 40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#bigWork{
+    position:relative;
+}
+#workTitle{
+    font-size:35px;
+    border:4px inset black;
 }
 #bigWorkimg{
-    width:200px;
+    margin-top: 40px;
+    width:100%;
+    height:auto;
+    margin:10px 0px;
+    padding:10px;
 }
+#bigWorksub{
+    position:absolute;
+    bottom:60px;
+    left:10px;
+    border:3px solid blue;
+    width:30%;
+    background-color: blue;
+    color:black;
+}
+#bigWorksub a{
+    text-decoration: none;
+    color:black;
+}
+.comingSoon{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.comingSoonimg{
+    padding:20px 10px;
+    width:45%;
+    height:auto;
+}
+@media screen and (min-width:900px){
+    #workTitle{
+        font-size:50px;
+        border:4px inset black;
+    }
+    #bigWorksub{
+        position:relative;
+        bottom:60px;
+        left:10px;
+        border:3px solid blue;
+        width:23%;
+        background-color: blue;
+        color:black;
+    }
+}
+@media screen and (min-width:1300px){
+    #workTitle{
+        font-size:60px;
+        border:4px inset black;
+    }
+    #bigWorksub{
+        position:relative;
+        bottom:60px;
+        left:10px;
+        border:3px solid blue;
+        width:18%;
+        background-color: blue;
+        color:black;
+    }
+} 
