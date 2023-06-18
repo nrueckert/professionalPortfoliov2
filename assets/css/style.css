@@ -1,6 +1,7 @@
 html{
     background-color: antiquewhite;
 }
+/* Everything below modifies the header to a default that I built around screen size of 575px*/
 header{
     display:flex;
     flex-direction:column;
@@ -47,28 +48,134 @@ header{
     padding:10px;
     margin:10px;
 }
-
+/* Everything above modifies the header to a default that I built around screen size of 575px*/
+/* Everything below modifies the header for devices larger than 900px wide.*/
+@media screen and (min-width:900px){
+    header{
+        display:flex;
+        flex-direction:row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width:100%;
+        height:200px;
+    }
+    #myName{
+        padding-right:5px;
+        margin: 20px 0px 0px 10px;
+        Font-size:40px;
+        font-family:Brush Script MT, Brush Script Std, cursive;
+        font-weight:bold;
+        border-radius:5px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+    #navList{
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size:18px;
+        font-weight:600;
+        margin:20px 50px 0px 0px;
+        width:100%;
+        height:30px;
+    }
+    #listWork{
+        padding:10px 10px;
+    }
+    #listContact{
+        padding:10px 13px 10px 0px;
+    }
+    #navList li{
+        background-color:rgb(79, 176, 201);
+        border-radius:20px;
+        padding:10px;
+        margin:10px;
+    }
+}
+/* Everything above modifies the header for devices larger than 900px wide.*/
+/* Everything below modifies the header for devices larger than 1300px wide.*/
+@media screen and (min-width:1300px){
+    header{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width:100%;
+        height:200px;
+    }
+    #myName{
+        padding-right:5px;
+        margin: 20px 0px 0px 10px;
+        Font-size:60px;
+        font-family:Brush Script MT, Brush Script Std, cursive;
+        font-weight:bold;
+        border-radius:5px;
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+        
+        
+    }
+    #navList{
+        display:flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size:25px;
+        font-weight:600;
+        margin:20px 0px 0px 10px;
+        width:600px;
+        height:50px;
+        flex-wrap:wrap;
+    }
+    #listWork{
+        padding:10px 10px;
+    }
+    #listContact{
+        padding:10px 13px 10px 0px;
+    }
+    #navList li{
+        border-bottom: 3px solid rgb(79, 176, 201);
+        margin:10px 10px;
+        padding:10px;
+    }
+}
+/* Everything above modifies the header for devices larger than 1300px wide.*/
 /* This removes underline and colors the links*/
 li a{
     text-decoration:none;
     color:rgba(211, 211, 211, 0.582);
 }
-/* Everything above makes the header appear how it does */
+/* Everything below modifies the aboutMe to a default that I built around screen size of 575px*/
 #aboutMe{
     display:flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:100%;
-    /*background-color: springgreen;*/
+}
+#aboutTextTitle{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #aboutTitle{
     font-size:30px;
     border: 2px solid cadetblue;
-    margin:0px 0px 10px 0px;
+    margin:10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:cadetblue;
+    width:179x;
 }
 
 #aboutBox{
@@ -76,6 +183,10 @@ li a{
     justify-content:center;
     position: relative;
     border: 4px dashed gold;
+}
+#aboutPic{
+    position: relative;
+    width:400px;
 }
 #aboutSub{
     position:absolute;
@@ -89,11 +200,127 @@ li a{
     color:rgb(209, 209, 209)
 
 }
-#aboutPic{
-    position: relative;
+#aboutText{
     width:400px;
+    padding:10px;
+    border: 3px dashed black;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
+/* Everything above modifies the aboutMe to a default that I built around screen size of 575px*/
+/* Everything below modifies the aboutMe for devices larger than 900px wide.*/
+@media screen and (min-width:900px){
+    #aboutMe{
+        display:flex;
+        flex-wrap: wrap;
+        height:515px;
+        width:100%;
+    }
+
+    #aboutTextTitle{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-left: 20px;
+    }
+    #aboutTitle{
+        display:flex;
+        font-size:40px;
+        border: 2px solid cadetblue;
+        margin:30px 0px 30px 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:cadetblue;
+        width:285px;
+        padding:20px;
+        justify-content: center;
+        
+    }
+    #aboutText{
+        width:400px;
+        border:3px solid black;
+        margin-right:20px;
+    }
+    
+    #aboutBox{
+        border: 4px dashed gold;
+    }
+    #aboutPic{
+        position: relative;
+        
+    }
+    #aboutSub{
+        position:absolute;
+        top:448px;
+        left:100px;
+        border-top-left-radius:10px;
+        background-color: rgb(136, 102, 57);
+        height:60px;
+        padding:4px 4px;
+        color:rgb(209, 209, 209)
+    
+    }
+
+}
+/* Everything above modifies the aboutMe for devices larger than 900px wide.*/
+/* Everything below modifies the aboutMe for devices larger than 1300px wide.*/
+@media screen and (min-width:1300px){
+    #aboutMe{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height:515px;
+        width:100%;
+    }
+
+    #aboutTextTitle{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:center;
+        margin-left: 80px;
+    }
+    #aboutTitle{
+        display:flex;
+        font-size:50px;
+        border: 2px solid cadetblue;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:cadetblue;
+        width:335px;
+        padding:20px;
+        justify-content: center;
+        
+    }
+    #aboutText{
+        width:600px;
+        border:3px solid black;
+        font-size:23px;
+        
+    }
+    
+    #aboutBox{
+        border: 4px dashed gold;
+        margin-right:40px;
+    }
+    #aboutPic{
+        position: relative;
+        
+    }
+    #aboutSub{
+        position:absolute;
+        top:448px;
+        left:100px;
+        border-top-left-radius:10px;
+        background-color: rgb(136, 102, 57);
+        height:60px;
+        padding:4px 4px;
+        color:rgb(209, 209, 209)
+    
+    }
+}
+/* Everything above modifies the aboutMe for devices larger than 1300px wide.*/
 #work{
+    margin-left:20px;
     width:80%;
 }
 #bigWorkimg{
