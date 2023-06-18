@@ -151,9 +151,9 @@ header{
 }
 /* Everything above modifies the header for devices larger than 1300px wide.*/
 /* This removes underline and colors the links*/
-li a{
+#navList li a{
     text-decoration:none;
-    color:rgba(211, 211, 211, 0.582);
+    color:rgb(185, 185, 185);
 }
 /* Everything below modifies the aboutMe to a default that I built around screen size of 575px*/
 #aboutMe{
@@ -193,7 +193,7 @@ li a{
     top:448px;
     left:100px;
     border-top-left-radius:10px;
-    background-color: rgb(136, 102, 57);
+    background-color: cadetblue;
     height:60px;
     padding:4px 4px;
     
@@ -254,7 +254,7 @@ li a{
         top:448px;
         left:100px;
         border-top-left-radius:10px;
-        background-color: rgb(136, 102, 57);
+        background-color: cadetblue;
         height:60px;
         padding:4px 4px;
         color:rgb(209, 209, 209)
@@ -280,6 +280,7 @@ li a{
         flex-direction: column;
         align-items:center;
     }
+
     #aboutTitle{
         display:flex;
         font-size:50px;
@@ -291,6 +292,7 @@ li a{
         justify-content: center;
         
     }
+
     #aboutText{
         width:600px;
         border:3px solid black;
@@ -302,17 +304,19 @@ li a{
         border: 4px dashed gold;
         margin-right:40px;
     }
+
     #aboutPic{
         position: relative;
         width:500px;
         
     }
+
     #aboutSub{
         position:absolute;
         top:575px;
         left:100px;
         border-top-left-radius:10px;
-        background-color: rgb(136, 102, 57);
+        background-color: cadetblue;
         height:60px;
         padding:4px 4px;
         color:rgb(209, 209, 209)
@@ -320,6 +324,8 @@ li a{
     }
 }
 /* Everything above modifies the aboutMe for devices larger than 1300px wide.*/
+
+/* Everything below modifies the aboutMe to a default I built around 575px screen width*/
 #work{
     margin-top:40px;
     padding-top: 40px;
@@ -328,70 +334,130 @@ li a{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 #bigWork{
     position:relative;
 }
+
 #workTitle{
     font-size:35px;
-    border:4px inset black;
+    color:cadetblue;
+    border:4px inset cadetblue;
 }
+
 #bigWorkimg{
     margin-top: 40px;
     width:100%;
     height:auto;
-    margin:10px 0px;
-    padding:10px;
+    margin-top:70px;
+    padding:10px 80px;
 }
+
 #bigWorksub{
     position:absolute;
-    bottom:60px;
-    left:10px;
+    bottom:40px;
+    left:80px;
     border:3px solid blue;
     width:30%;
     background-color: blue;
     color:black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+
 #bigWorksub a{
     text-decoration: none;
     color:black;
+    font-family:'Courier New', Courier, monospace;
 }
+
 .comingSoon{
     display:flex;
     justify-content: space-around;
     flex-wrap:wrap;
 }
+
 .comingSoonimg{
     padding:20px 10px;
     width:45%;
     height:auto;
 }
+/* Everything above modifies the aboutMe to a default I built around 575px screen width*/
+
+/* Everything below modifies the aboutMe to screens wider than 900px*/
 @media screen and (min-width:900px){
     #workTitle{
         font-size:50px;
         border:4px inset black;
     }
+
     #bigWorksub{
+        font-size:30px;
         position:relative;
-        bottom:60px;
-        left:10px;
+        bottom:135px;
+        left:80px;
         border:3px solid blue;
         width:23%;
         background-color: blue;
         color:black;
     }
 }
+/* Everything above modifies the aboutMe to screens wider than 900px*/
+
+/* Everything below modifies the aboutMe to screens wider than 1300px*/
 @media screen and (min-width:1300px){
     #workTitle{
         font-size:60px;
         border:4px inset black;
     }
+
     #bigWorksub{
+        font-size:35px;
         position:relative;
-        bottom:60px;
-        left:10px;
+        bottom:150px;
+        left:80px;
         border:3px solid blue;
         width:18%;
         background-color: blue;
         color:black;
     }
 } 
+/* Everything above modifies the aboutMe to screens wider than 1300px*/
+
+#contactMe{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+#contactTitle{
+    color:rgb(0, 0, 0);
+    margin:20px;
+    margin-left:50px;
+    font-size:50px;
+    border-right:2px inset black;
+    padding:20px 0px;
+    padding-right:10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#contactList li a{
+    text-decoration: none;
+    color:cadetblue;
+    font-family:Josefin Sans;
+    font-size:25px;
+}
+/* Everything above modifies the contactMe to a default I built around 575px screen width*/
+
+/* Everything below modifies the aboutMe to screens wider than 900px*/
+@media screen and (min-width:900px){
+    #contactTitle{
+        font-size:70px;
+    }
+    #contactList li a{
+        font-size:30px;
+
+    }
+}
+/* Everything above modifies the aboutMe to screens wider than 900px*/
