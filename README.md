@@ -16,7 +16,7 @@ Visit it at https://nrueckert.github.io/professionalPortfoliov2/ or <br>
 run the index.html in the repo.
 
     
-    ![Website Picture](assets/images/Screenshot%202023-06-18%20223012.png)
+    ![Website Picture](/assets/images/Screenshot%202023-06-18%20223012.png)
 
 
 ## Credits
