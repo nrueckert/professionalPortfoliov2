@@ -15,9 +15,9 @@ I learned how to manipulate content to where I want it to be displayed.
 Visit it at https://nrueckert.github.io/professionalPortfoliov2/ or <br>
 run the index.html in the repo.
 
-    ```md
+    
     ![Website Picture](assets/images/Screenshot%202023-06-18%20223012.png)
-    ```
+
 
 ## Credits
 
